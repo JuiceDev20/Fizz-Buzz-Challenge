@@ -132,6 +132,20 @@
 
         };
 
+        document.getElementById("txtInputIn").addEventListener("keydown", function (e) {
+
+            var charater = (e.which) ? e.which : e.keyCode;
+            console.log(charater)
+
+            if (charater >= 97 && charater <= 122 ||
+                charater >= 65 && charater <= 90 || charater == 8) {
+                return true;
+            }
+            else {
+                e.preventDefault();
+                return false;
+            }
+
     </script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
