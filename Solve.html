@@ -31,17 +31,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/Index.html" />
 
                         Home
                         <a href="#" Portfolio />
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Solve.html">Solve</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Solve</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Code.txt">Code</a>
+                        <a class="nav-link" href="CodeSample.txt">Code</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Git</a>
@@ -72,14 +72,16 @@
                 <div class="col"><input type="text" class="form-control" id="btnFizzBuzz2"></div>
                 <div class="col"><button onclick="btnFizzBuzz" class="btn btn-primary" id="btnFizzBuzz">Submit</button></div>
                 <div class="col"><button type="button" onclick="ClearAll()" class="btn btn-outline-danger btn elWide" id="clear">Clear</button></div>
-             </div>
-         </div>
+            </div>
+        </div>
     </section>
     <hr />
     <section>
         <div class="container">
             <div class="row">
                 <textarea class="form-control" id="FizzBuzzOut" rows="4" style="resize: none;" readonly=""></textarea>
+            </div>
+            <div class="row">
             </div>
         </div>
     </section>
@@ -106,7 +108,6 @@
     </script>
 
     <script>
-
         //A named function
         function DoFizzBuzz(fizz, buzz) {
             let output = "";
@@ -140,6 +141,7 @@
     </script>
 
     <script>
+
         function ClearAll() {
             document.getElementById("btnFizzBuzz1").value = "";
             document.getElementById("btnFizzBuzz2").value = "";
@@ -149,25 +151,6 @@
 
     </script>
 
-    <script>
-
-        document.getElementById("txtInputIn").addEventListener("keydown", function (e) {
-
-            var charater = (e.which) ? e.which : e.keyCode;
-            console.log(charater)
-
-            if (charater >= 97 && charater <= 122 ||
-                charater >= 65 && charater <= 90 || charater == 8) {
-                return true;
-            }
-            else {
-                e.preventDefault();
-                return false;
-            }
-
-        };
-
-    </script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

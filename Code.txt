@@ -1,5 +1,7 @@
-﻿
-<script>
+﻿//My Code
+
+  <script>
+
         //My comments for the Fizz-Buzz Challenge:
         //Wiring up an event handler for the click event of btnFizzBuzz
         document.getElementById("btnFizzBuzz").addEventListener('click', function () {
@@ -14,6 +16,10 @@
             document.getElementById("FizzBuzzOut").innerHTML = output;
 
         });
+
+    </script>
+
+    <script>
 
         //A named function
         function DoFizzBuzz(fizz, buzz) {
@@ -41,7 +47,17 @@
 
                 }
             }
-                return output;
+            return output;
+
+        };
+
+    </script>
+
+    <script>
+        function ClearAll() {
+            document.getElementById("btnFizzBuzz1").value = "";
+            document.getElementById("btnFizzBuzz2").value = "";
+            document.getElementById("FizzBuzzOut").value = "";
 
         };
 
