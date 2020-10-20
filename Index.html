@@ -23,7 +23,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary static-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info static-top">
         <div class="container">
             <a><img class="navbar-brand" src="Images/favicon-32x32.png" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,16 +41,13 @@
                         <a class="nav-link" href="/Solve.html">Solve</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Code.txt">Code</a>
+                        <a class="nav-link" href="#">Code</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Git</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="//ojolmo-fs-portfolio.netlify.app">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog Post/</a>
                     </li>
                 </ul>
             </div>
@@ -60,31 +57,18 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col align-content-center text-warning"><h1>FizzBuzz Challenge</h1></div>
+                <div class="col align-content-center text-info"><h1>FizzBuzz Challenge</h1></div>
             </div>
+            <hr />
+            <p class="text-dark"> This challenge is a staple of the software development community. It involves finding spedial events in a data set which most developers identify as the multiples of 3 and 5.
+            My solution however does not limit you to only 3 and 5, you may choose any whole number between 1 and 100, mainly because I set the range limit at 100.</p>
+            <p class="text-dark">Whenever the algorithm finds a multiple of 3 it will print Fizz, when it finds a multiple of 5 it will print Buzz, and when it finds a multiple of both (15) it will print FizzBuzz.</p>
         </div>
     </section>
     <hr />
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col"><input type="text" class="form-control" id="btnFizzBuzz1"></div>
-                <div class="col"><input type="text" class="form-control" id="btnFizzBuzz2"></div>
-                <div class="col"><button onclick="btnFizzBuzz" class="btn btn-primary" id="btnFizzBuzz">Submit</button></div>
-                <div class="col"><button type="button" onclick="ClearAll()" class="btn btn-outline-danger btn elWide" id="clear">Clear</button></div>
-             </div>
-         </div>
-    </section>
+ 
     <hr />
-    <section>
-        <div class="container">
-            <div class="row">
-                <textarea class="form-control" id="FizzBuzzOut" rows="4" style="resize: none;" readonly=""></textarea>
-            </div>
-        </div>
-    </section>
-
-    <hr />
+   
 
     <script>
 
