@@ -67,13 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Code.txt" />
+    <Content Include="Code.html" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\prism-css.css" />
     <Content Include="Content\starter-template.css" />
     <Content Include="Fonts\fa-brands-400.svg" />
     <Content Include="Fonts\fa-regular-400.svg" />
@@ -82,9 +83,10 @@
     <Content Include="Images\favicon-32x32.png" />
     <Content Include="Images\FB-bg.png" />
     <Content Include="Images\OJOlmo.jpg" />
+    <Content Include="Readme.html" />
+    <Content Include="Scripts\prism-js.js" />
     <Content Include="Solve.html" />
     <Content Include="Index.html" />
-    <Content Include="README.txt" />
     <Content Include="Scripts\breakpoints.min.js" />
     <Content Include="Scripts\browser.min.js" />
     <Content Include="Content\fontawesome-all.min.css" />

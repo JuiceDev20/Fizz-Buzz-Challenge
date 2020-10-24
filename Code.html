@@ -1,4 +1,4 @@
-﻿<!DOCHTML html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -9,13 +9,8 @@
     <title>Fizz-Buzz Challenge</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="Content/bootstrap-grid.css" rel="stylesheet" />
-    <link href="Content/bootstrap-grid.min.css" rel="stylesheet" />
-    <link href="Content/bootstrap-reboot.min.css" rel="stylesheet" />
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/starter-template.css" rel="stylesheet" />
-
-    <!-- Custom styles for this template -->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/prism-css.css" rel="stylesheet" />
     <link href="Content/starter-template.css" rel="stylesheet" />
 </head>
 <body>
@@ -28,7 +23,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/Index.html" />
 
                         Home
@@ -37,8 +32,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/Solve.html">Solve</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Code.html">Code</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Code</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Git</a>
@@ -55,76 +50,54 @@
             <div class="row">
                 <div class="col align-content-center text-danger"><h1>FizzBuzz Challenge</h1></div>
             </div>
-            <hr />
-            <p class="text-danger"> This challenge is a staple of the software development community. It involves finding spedial events in a data set which most developers identify as the multiples of 3 and 5.
-            My solution however does not limit you to only 3 and 5, you may choose any whole number between 1 and 100, mainly because I set the range limit at 100.</p>
-            <p class="text-danger">Whenever the algorithm finds a multiple of 3 it will print Fizz, when it finds a multiple of 5 it will print Buzz, and when it finds a multiple of both (15) it will print FizzBuzz.</p>
         </div>
-    </section>
-    <hr />
-    <script>
-        //My comments for the Fizz-Buzz Challenge:
-        //Wiring up an event handler for the click event of btnFizzBuzz
+        <hr />
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col_10">
+                <pre class="line-numbers language-js">
+                    <code class="language-js">
         document.getElementById("btnFizzBuzz").addEventListener('click', function () {
-            //Step 1- Get user data if there is any
             let fizz = Number(document.getElementById("btnFizzBuzz1").value); // usually 3
             let buzz = Number(document.getElementById("btnFizzBuzz2").value); // usually 5
-
-            //Step 2- Run the user data through the function
             let output = DoFizzBuzz(fizz, buzz);
-
             //Step 3- Output the results of the FizzBuzz named function
             document.getElementById("FizzBuzzOut").innerHTML = output;
-
         });
-    </script>
-    <script>
-        //A named function
         function DoFizzBuzz(fizz, buzz) {
             let output = "";
-
             for (let loop = 1; loop <= 100; loop++) {
-                let fizzRemainder = loop % fizz;
-                let buzzRemainder = loop % buzz;
-                //Some calculation that looks at fizz and buzz to see if they are 0
+            let fizzRemainder = loop % fizz;
+            let buzzRemainder = loop % buzz;
                 if (fizzRemainder == 0 && buzzRemainder == 0) {
-                    output += "FizzBuzz ";
-
+                output += "FizzBuzz ";
                 }
                 else if (fizzRemainder == 0) {
-                    output += "Fizz ";
-
+                output += "Fizz ";
                 }
                 else if (buzzRemainder == 0) {
-                    output += "Buzz ";
-
+                output += "Buzz ";
                 }
-
                 else {
-                    output += `${loop} `;
-
+                output += `${loop} `;
                 }
             }
             return output;
-
         };
-
-    </script>
-    <script>
         function ClearAll() {
             document.getElementById("btnFizzBuzz1").value = "";
             document.getElementById("btnFizzBuzz2").value = "";
             document.getElementById("FizzBuzzOut").value = "";
-
-        };
-
-    </script>
-    
+        };</code>
+                </pre>
+            </div>
+        </div>
+    </section>
+   
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="//code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="//code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/prism-js.js"></script>
 </body>
 
 </html>

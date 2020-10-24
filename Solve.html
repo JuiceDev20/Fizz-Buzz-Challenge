@@ -8,7 +8,6 @@
     <meta name="generator" content="Jekyll v4.1.1">
     <title>Fizz-Buzz Challenge</title>
 
-
     <!-- Bootstrap core CSS -->
     <link href="Content/bootstrap-grid.css" rel="stylesheet" />
     <link href="Content/bootstrap-grid.min.css" rel="stylesheet" />
@@ -41,7 +40,7 @@
                         <a class="nav-link" href="#">Solve</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Code</a>
+                        <a class="nav-link" href="/Code.html">Code</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Git</a>
@@ -57,7 +56,7 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col align-content-center text-info"><h1>FizzBuzz Challenge</h1></div>
+                <div class="col align-content-center text-danger"><h1>FizzBuzz Challenge</h1></div>
             </div>
         </div>
     </section>
@@ -86,7 +85,6 @@
     <hr />
 
     <script>
-
         //My comments for the Fizz-Buzz Challenge:
         //Wiring up an event handler for the click event of btnFizzBuzz
         document.getElementById("btnFizzBuzz").addEventListener('click', function () {
@@ -101,9 +99,7 @@
             document.getElementById("FizzBuzzOut").innerHTML = output;
 
         });
-
     </script>
-
     <script>
         //A named function
         function DoFizzBuzz(fizz, buzz) {
@@ -115,44 +111,33 @@
                 //Some calculation that looks at fizz and buzz to see if they are 0
                 if (fizzRemainder == 0 && buzzRemainder == 0) {
                     output += "FizzBuzz ";
-
                 }
                 else if (fizzRemainder == 0) {
                     output += "Fizz ";
-
                 }
                 else if (buzzRemainder == 0) {
                     output += "Buzz ";
-
                 }
-
                 else {
                     output += `${loop} `;
-
                 }
             }
             return output;
-
         };
-
     </script>
-
     <script>
-
         function ClearAll() {
             document.getElementById("btnFizzBuzz1").value = "";
             document.getElementById("btnFizzBuzz2").value = "";
             document.getElementById("FizzBuzzOut").value = "";
 
         };
-
     </script>
 
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 
